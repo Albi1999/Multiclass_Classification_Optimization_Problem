@@ -6,6 +6,7 @@ The project is a collaborative effort by Alberto Calabrese, Greta d'Amore Grelli
 ## Project Overview
 
 **Optimization Problem**: The core of this project is to solve the multi-class classification problem of the form:
+
 $$
 \min_{X\in\R^{d\times k}} f(x) = \min_{X\in\R^{d\times k}} \sum_{i=1}^{m}\left[-x_{b_i}^Ta_i + \log\left(\sum_{c=1}^{k}\exp(x_c^Ta_i)\right)\right],
 $$
