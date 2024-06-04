@@ -11,7 +11,7 @@ $$
 \min_{X\in\R^{d\times k}} f(x) = \min_{X\in\R^{d\times k}} \sum_{i=1}^{m}\left[-x_{b_i}^Ta_i + \log\left(\sum_{c=1}^{k}\exp(x_c^Ta_i)\right)\right],
 $$
 
-where $a_i\inR^d$ are the features of the $i$-th sample, $x_c\inR^d$ is the column vector of the matrix of parameters $X\inR^{d\times k}$ relating to class $c$ and $b_i\in\{1,\dots k\}$ is the label associated to the $i$-th sample, given by the following probability:
+where $a_i\in\R^d$ are the features of the $i$-th sample, $x_c\in\R^d$ is the column vector of the matrix of parameters $X\in\R^{d\times k}$ relating to class $c$ and $b_i\in\{1,\dots k\}$ is the label associated to the $i$-th sample, given by the following probability:
 
 $$
 P(b_i | X, a_i) = \frac{\exp(x_{b_i}^Ta_i)}{\sum_{c=1}^{k}\exp(x_c^Ta_i)}.
